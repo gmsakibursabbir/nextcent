@@ -1,0 +1,555 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexcent</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- tailwind css -->
+  <link rel="stylesheet" crossorigin href="/assets/index-BEriI9Ut.css">
+</head>
+
+<body class="font-inter">
+  <!-- navbar start -->
+  <header class="bg-bg-light ">
+    <nav class="container mx-auto p-5  flex justify-between items-center">
+      <a href="#" id="brand">
+        <img src="/assets/Logo-C-yNRofY.svg" class="object-cover" alt="logo">
+      </a>
+      <div id="nav-menu" class="hidden lg:flex gap-10">
+        <a href="#" class="font-normal text-dark hover:text-primary">Home</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Service</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Feature</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Product</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Testimonial</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">FAQ</a>
+      </div>
+      <div class="hidden lg:flex gap-4">
+        <button class="flex p-2 px-4 text-primary hover:bg-green-600 hover:text-white rounded-md">Login</button>
+        <button class="flex p-2 px-4 bg-primary hover:bg-green-600 text-white rounded-md">Sign up</button>
+      </div>
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <svg class="h-7 w-7 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="nav-dialog" class="fixed bg-white inset-0 sm:px-10 px-3 py-3 lg:hidden z-10">
+        <div id="nav-bar" class="flex justify-between items-center">
+          <a href="#" id="brand">
+            <img src="/assets/Logo-C-yNRofY.svg" class="object-cover" alt="logo">
+          </a>
+          <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <svg class="h-7 w-7 text-gray-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col mt-6">
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Home</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Service</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Feature</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Product</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Testimonial</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">FAQ</a>
+          <div class="flex gap-5 mt-5 mx-auto">
+            <button class="flex p-2 px-4 text-primary hover:bg-green-600 hover:text-white rounded-md">Login</button>
+            <button class="flex p-2 px-4 bg-primary hover:bg-green-600 text-white rounded-md">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- navbar end -->
+  <!-- hero start -->
+  <section class="bg-bg-light">
+    <div class="container mx-auto py-28 px-4 grid grid-cols-12 items-center ">
+      <div
+        class="sm:col-span-7 col-span-12 flex  flex-col justify-center text-left sm:order-1 order-2 sm:justify-start sm:pt-0 pt-10">
+        <h1 class="lg:text-7xl md:text-4xl text-3xl font-semibold text-gray-800 sm:mb-4 mb-2">Lessons and insights</h1>
+        <h2 class="lg:text-7xl md:text-4xl text-3xl font-semibold text-green-500 sm:mb-8 mb-5">from 8 years</h2>
+        <p class="text-gray-600 text-lg mb-8">Where to grow your business as a photographer: site or social media?</p>
+        <button
+          class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
+      </div>
+      <div class="sm:col-span-5 col-span-12 flex justify-center items-center sm:order-2 order-1 sm:justify-end">
+        <img src="/assets/hero-BXuwtaX5.png" alt="Computer" class="h-auto sm:max-w-[400px] w-full">
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- hero end -->
+  <!-- client start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class=" text-center">
+        <h3 class="text-4xl font-semibold text-center text-gray-dark mb-4">Our Clients</h3>
+        <p class="text-gray-dark font-normal">We have been working with some Fortune 500+ clients</p>
+      </div>
+      <div class="grid sm:grid-cols-7 grid-cols-6 mt-14 sm:gap-0 gap-y-8">
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_818)'%3e%3cpath%20id='Vector'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.0001%200C15.5229%200%2020.0001%204.47715%2020.0001%2010V0H30.0001C35.5229%200%2040.0001%204.47715%2040.0001%2010C40.0001%2015.5228%2035.5229%2020%2030.0001%2020C35.5229%2020%2040.0001%2024.4772%2040.0001%2030C40.0001%2032.7423%2038.8962%2035.2268%2037.1086%2037.0334L37.0712%2037.0711L37.038%2037.1041C35.231%2038.8943%2032.7447%2040%2030.0001%2040C27.2742%2040%2024.803%2038.9093%2022.9991%2037.1405C22.9757%2037.1175%2022.9523%2037.0943%2022.929%2037.0711C22.9071%2037.0492%2022.8853%2037.0272%2022.8636%2037.0051C21.0925%2035.2009%2020.0001%2032.728%2020.0001%2030C20.0001%2035.5228%2015.5229%2040%2010.0001%2040C4.47721%2040%206.10352e-05%2035.5228%206.10352e-05%2030V20H10.0001C4.47721%2020%206.10352e-05%2015.5228%206.10352e-05%2010C6.10352e-05%204.47715%204.47721%200%2010.0001%200ZM18.0001%2010C18.0001%2014.4183%2014.4184%2018%2010.0001%2018V2C14.4184%202%2018.0001%205.58172%2018.0001%2010ZM38.0001%2030C38.0001%2025.5817%2034.4184%2022%2030.0001%2022C25.5818%2022%2022.0001%2025.5817%2022.0001%2030H38.0001ZM2.00006%2022V30C2.00006%2034.4183%205.58178%2038%2010.0001%2038C14.4184%2038%2018.0001%2034.4183%2018.0001%2030V22H2.00006ZM22.0001%2018V2H30.0001C34.4184%202%2038.0001%205.58172%2038.0001%2010C38.0001%2014.4183%2034.4184%2018%2030.0001%2018H22.0001Z'%20fill='%23263238'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_818'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="data:image/svg+xml,%3csvg%20width='40'%20height='29'%20viewBox='0%200%2040%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_821)'%3e%3cpath%20id='Vector'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.98578%204.96142L0%2014.8468C1.99734%2016.8241%204.27899%2018.4905%206.76664%2019.7942C7.45424%2021.5998%208.53203%2023.2931%2010%2024.7463C15.5229%2030.2136%2024.4772%2030.2136%2030%2024.7463C31.468%2023.2931%2032.5458%2021.5998%2033.2334%2019.7941C35.721%2018.4905%2038.0027%2016.8241%2040%2014.8468L30.0223%204.96946C30.0149%204.96207%2030.0075%204.95468%2030%204.9473C24.4772%20-0.520031%2015.5229%20-0.520031%2010%204.9473C9.99527%204.95201%209.99052%204.95671%209.98578%204.96142ZM29.0445%2021.5777C26.1345%2022.5499%2023.0797%2023.0478%2020%2023.0478C16.9203%2023.0478%2013.8656%2022.5499%2010.9556%2021.5777C11.2709%2021.9918%2011.619%2022.3892%2012%2022.7664C16.4183%2027.1403%2023.5817%2027.1403%2028%2022.7664C28.381%2022.3892%2028.7292%2021.9918%2029.0445%2021.5777ZM12.2051%206.7292C12.9554%207.21991%2013.7532%207.63982%2014.588%207.98216C16.3038%208.68572%2018.1428%209.04784%2020%209.04784C21.8572%209.04784%2023.6962%208.68572%2025.412%207.98216C26.2468%207.63982%2027.0446%207.2199%2027.795%206.72918C23.4318%202.61933%2016.5682%202.61934%2012.2051%206.7292Z'%20fill='%233B4158'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_821'%3e%3crect%20width='40'%20height='28'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="/assets/client-3-D_A2NqIO.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="/assets/client-4-D9-ra7IU.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="data:image/svg+xml,%3csvg%20width='41'%20height='28'%20viewBox='0%200%2041%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_844)'%3e%3cpath%20id='Vector'%20d='M38.4375%201.69055C38.4375%202.15654%2038.8199%202.5343%2039.2917%202.5343H40.1458C40.6176%202.5343%2041%202.15654%2041%201.69055C41%201.22456%2040.6176%200.846802%2040.1458%200.846802H39.2917C38.8199%200.846802%2038.4375%201.22456%2038.4375%201.69055Z'%20fill='%23212326'/%3e%3cpath%20id='Vector_2'%20d='M13.6667%2027.8468H17.8161L16.6081%2026.6535C16.2877%2026.3371%2015.8532%2026.1593%2015.4001%2026.1593H13.6667C7.06225%2026.1593%201.70833%2020.8707%201.70833%2014.3468C1.70833%207.82293%207.06225%202.53431%2013.6667%202.5343H27.3333C33.9378%202.5343%2039.2917%207.82293%2039.2917%2014.3468C39.2917%2020.8707%2033.9378%2026.1593%2027.3333%2026.1593H22.2209C21.5413%2026.1593%2020.8895%2025.8926%2020.4089%2025.4179L18.9937%2024.02C18.1928%2023.2288%2017.1064%2022.7843%2015.9737%2022.7843H13.6667C8.94921%2022.7843%205.125%2019.0067%205.125%2014.3468C5.125%209.68687%208.94921%205.9093%2013.6667%205.9093H27.3333C32.0508%205.9093%2035.875%209.68687%2035.875%2014.3468C35.875%2019.0067%2032.0508%2022.7843%2027.3333%2022.7843H24.0507C23.371%2022.7843%2022.7193%2022.5176%2022.2387%2022.0429L20.8234%2020.645C20.0225%2019.8538%2018.9362%2019.4093%2017.8035%2019.4093H13.6667C10.8362%2019.4093%208.54167%2017.1427%208.54167%2014.3468C8.54167%2011.5509%2010.8362%209.2843%2013.6667%209.2843H27.3333C30.1638%209.2843%2032.4583%2011.5509%2032.4583%2014.3468C32.4583%2017.1086%2030.2194%2019.354%2027.4367%2019.4083L27.4361%2019.4093H26.1861C25.5064%2019.4093%2024.8547%2019.1426%2024.3741%2018.6679L22.9588%2017.27C22.3017%2016.6207%2021.4524%2016.205%2020.5429%2016.0767L20.5%2016.0343H13.6667C12.7232%2016.0343%2011.9583%2015.2788%2011.9583%2014.3468C11.9583%2013.4148%2012.7232%2012.6593%2013.6667%2012.6593H27.3333C28.2768%2012.6593%2029.0417%2013.4148%2029.0417%2014.3468C29.0417%2015.2788%2028.2768%2016.0343%2027.3333%2016.0343H23.9167L25.1247%2017.2276C25.445%2017.544%2025.8795%2017.7218%2026.3326%2017.7218H27.3333C29.2203%2017.7218%2030.75%2016.2107%2030.75%2014.3468C30.75%2012.4829%2029.2203%2010.9718%2027.3333%2010.9718H13.6667C11.7797%2010.9718%2010.25%2012.4829%2010.25%2014.3468C10.25%2016.2107%2011.7797%2017.7218%2013.6667%2017.7218H19.9389C20.6186%2017.7218%2021.2703%2017.9885%2021.7509%2018.4632L23.1662%2019.8611C23.9671%2020.6523%2025.0534%2021.0968%2026.1861%2021.0968H27.7604V21.0838C31.3354%2020.8661%2034.1667%2017.933%2034.1667%2014.3468C34.1667%2010.6189%2031.1072%207.5968%2027.3333%207.5968H13.6667C9.89275%207.5968%206.83333%2010.6189%206.83333%2014.3468C6.83333%2018.0748%209.89275%2021.0968%2013.6667%2021.0968H17.8035C18.4831%2021.0968%2019.1349%2021.3635%2019.6155%2021.8382L21.0307%2023.2361C21.8317%2024.0273%2022.918%2024.4718%2024.0507%2024.4718H27.3333C32.9943%2024.4718%2037.5833%2019.9387%2037.5833%2014.3468C37.5833%208.7549%2032.9943%204.2218%2027.3333%204.2218H13.6667C8.00573%204.2218%203.41667%208.7549%203.41667%2014.3468C3.41667%2019.9387%208.00573%2024.4718%2013.6667%2024.4718H15.9737C16.6534%2024.4718%2017.3051%2024.7385%2017.7857%2025.2132L19.201%2026.6111C20.0019%2027.4023%2021.0882%2027.8468%2022.2209%2027.8468H27.3333C34.8812%2027.8468%2041%2021.8027%2041%2014.3468C41%206.89095%2034.8812%200.846801%2027.3333%200.846802L13.6667%200.846805C6.11877%200.846805%20-6.59857e-07%206.89096%200%2014.3468C6.59857e-07%2021.8027%206.11878%2027.8468%2013.6667%2027.8468Z'%20fill='%23212326'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_844'%3e%3crect%20width='41'%20height='27'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="data:image/svg+xml,%3csvg%20width='52'%20height='21'%20viewBox='0%200%2052%2021'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_848)'%3e%3cpath%20id='Vector'%20d='M12.3431%200.846802C10.3124%200.846802%208.36487%201.6535%206.92893%203.08944L2.24264%207.77574C0.8067%209.21167%200%2011.1592%200%2013.1899C0%2017.4187%203.42809%2020.8468%207.65687%2020.8468C9.6876%2020.8468%2011.6351%2020.0401%2013.0711%2018.6041L16.3126%2015.3626C16.3126%2015.3625%2016.3127%2015.3627%2016.3126%2015.3626L25.7573%205.91787C26.4431%205.23208%2027.3733%204.8468%2028.3431%204.8468C29.9669%204.8468%2031.3435%205.90508%2031.8207%207.36952L34.8015%204.38878C33.4417%202.25903%2031.0573%200.846802%2028.3431%200.846802C26.3124%200.846802%2024.3649%201.6535%2022.9289%203.08944L10.2427%2015.7757C9.55687%2016.4615%208.62673%2016.8468%207.65687%2016.8468C5.63723%2016.8468%204%2015.2096%204%2013.1899C4%2012.2201%204.38527%2011.2899%205.07107%2010.6041L9.75733%205.91787C10.4431%205.23208%2011.3733%204.8468%2012.3431%204.8468C13.9669%204.8468%2015.3435%205.90512%2015.8207%207.36961L18.8015%204.38885C17.4417%202.25907%2015.0574%200.846802%2012.3431%200.846802Z'%20fill='%23394149'/%3e%3cpath%20id='Vector_2'%20d='M26.2427%2015.7757C25.5569%2016.4615%2024.6268%2016.8468%2023.6569%2016.8468C22.0334%2016.8468%2020.6569%2015.7888%2020.1795%2014.3246L17.1989%2017.3053C18.5587%2019.4347%2020.9429%2020.8468%2023.6569%2020.8468C25.6877%2020.8468%2027.6352%2020.0401%2029.0711%2018.6041L41.7574%205.91787C42.4432%205.23208%2043.3733%204.8468%2044.3432%204.8468C46.3629%204.8468%2048%206.48403%2048%208.50367C48%209.47354%2047.6148%2010.4037%2046.929%2011.0895L42.2427%2015.7757C41.5569%2016.4615%2040.6268%2016.8468%2039.6569%2016.8468C38.0332%2016.8468%2036.6567%2015.7886%2036.1794%2014.3243L33.1987%2017.305C34.5585%2019.4347%2036.9428%2020.8468%2039.6569%2020.8468C41.6876%2020.8468%2043.6352%2020.0401%2045.0711%2018.6041L49.7574%2013.9179C51.1933%2012.4819%2052%2010.5344%2052%208.50367C52%204.2749%2048.572%200.846802%2044.3432%200.846802C42.3125%200.846802%2040.3649%201.6535%2038.929%203.08944L26.2427%2015.7757Z'%20fill='%23394149'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_848'%3e%3crect%20width='52'%20height='20'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-6 mx-auto">
+          <img src="/assets/client-7-WpZNFhsF.svg" alt="client">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- client end -->
+  <!-- community start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center ">
+        <h3 class="max-w-[550px] mx-auto md:text-4xl text-3xl font-semibold text-gray-dark mb-3 leading-normal">Manage
+          your entire
+          community in a single
+          system</h3>
+        <p class="text-gray-dark font-normal">Who is Nextcent suitable for?</p>
+      </div>
+      <div class=" grid grid-cols-3 items-center lg:gap-0 gap-y-8 mt-10">
+        <div class="lg:col-span-1 col-span-3 max-w-[300px] mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="data:image/svg+xml,%3csvg%20width='65'%20height='56'%20viewBox='0%200%2065%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M65%2038C65%2047.9411%2056.9411%2056%2047%2056L20%2056C17.2386%2056%2015%2053.7614%2015%2051L15%2017C15%2011.4772%2019.4772%207%2025%207L60%207C62.7614%207%2065%209.23858%2065%2012L65%2038Z'%20fill='%23E8F5E9'/%3e%3cpath%20d='M23.99%2010C20.4187%2010%2017.5114%2012.9339%2017.5114%2016.5203C17.5114%2018.7892%2018.6765%2020.7925%2020.4358%2021.9602C18.3109%2022.6706%2016.4723%2023.9985%2015.1238%2025.7357C14.3782%2025.1622%2013.5451%2024.701%2012.647%2024.3705C14.0089%2023.3595%2014.8989%2021.7353%2014.8989%2019.91C14.8989%2016.8682%2012.4388%2014.3782%209.41547%2014.3782C6.39215%2014.3782%203.93208%2016.8682%203.93208%2019.91C3.93208%2021.7364%204.82277%2023.3613%206.18579%2024.3723C2.57721%2025.7039%200%2029.1903%200%2033.2933V36.1754C0.000369347%2036.3951%200.0882567%2036.6056%200.244089%2036.7604C0.39992%2036.9155%200.610779%2037.0019%200.830496%2037.0011H13.4755C13.5061%2037.0045%2013.5368%2037.0063%2013.5674%2037.0059H34.4133C34.4439%2037.0063%2034.4749%2037.0045%2034.5052%2037.0011H47.1511C47.6057%2036.9993%2047.9739%2036.6304%2047.975%2036.1754V33.2933C47.975%2029.1903%2045.4022%2025.7039%2041.7955%2024.3719C43.1585%2023.3613%2044.0492%2021.736%2044.0492%2019.9096C44.0492%2016.8679%2041.5892%2014.3778%2038.5658%2014.3778C35.5426%2014.3778%2033.0824%2016.8679%2033.0824%2019.9096C33.0824%2021.735%2033.9728%2023.3594%2035.3346%2024.3701C34.4347%2024.7014%2033.6013%2025.1641%2032.8546%2025.739C31.5067%2024.0008%2029.6707%2022.6711%2027.5459%2021.9602C29.3047%2020.7925%2030.4703%2018.7892%2030.4703%2016.5203C30.4703%2012.9339%2027.5614%2010%2023.9902%2010H23.99ZM23.99%2011.6544C26.661%2011.6544%2028.8142%2013.822%2028.8142%2016.5203C28.8142%2019.1976%2026.6945%2021.3442%2024.0531%2021.3786C24.0321%2021.3786%2024.0114%2021.3756%2023.99%2021.3756C23.9686%2021.3756%2023.9483%2021.3786%2023.9268%2021.3786C21.2854%2021.3446%2019.1672%2019.1977%2019.1672%2016.5203C19.1672%2013.8217%2021.3186%2011.6544%2023.9896%2011.6544H23.99ZM9.41556%2016.0324C11.5348%2016.0324%2013.2446%2017.7525%2013.2446%2019.9099C13.2446%2022.0528%2011.557%2023.7655%209.45763%2023.7887C9.4436%2023.7887%209.42994%2023.7873%209.41553%2023.7873C9.4015%2023.7873%209.38784%2023.7887%209.37344%2023.7887C7.2741%2023.7655%205.58647%2022.0524%205.58647%2019.9099C5.58647%2017.7526%207.29623%2016.0324%209.4155%2016.0324H9.41556ZM38.5653%2016.0324C40.6846%2016.0324%2042.3944%2017.7525%2042.3944%2019.9099C42.3944%2022.0528%2040.7067%2023.7655%2038.6074%2023.7887C38.5934%2023.7887%2038.5797%2023.7873%2038.5653%2023.7873C38.5513%2023.7873%2038.5376%2023.7887%2038.5232%2023.7887C36.4239%2023.7655%2034.7363%2022.0524%2034.7363%2019.9099C34.7363%2017.7526%2036.446%2016.0324%2038.5653%2016.0324H38.5653ZM23.9266%2023.0328C23.9477%2023.0332%2023.9684%2023.0358%2023.9898%2023.0358C24.0108%2023.0358%2024.0315%2023.0328%2024.0529%2023.0328C29.3502%2023.0668%2033.5896%2027.3427%2033.5896%2032.6952L33.5892%2035.3511H14.3911V32.6952C14.3911%2027.3422%2018.6293%2023.0669%2023.9259%2023.0328H23.9266ZM9.35223%2025.445C9.37327%2025.4454%209.39395%2025.4479%209.41537%2025.4479C9.43679%2025.4479%209.4571%2025.445%209.47852%2025.445C11.2702%2025.4594%2012.9054%2026.0772%2014.2074%2027.1108C13.2757%2028.7593%2012.7369%2030.6621%2012.7369%2032.6957V35.3452H1.65369V33.2932C1.65369%2028.9431%205.07396%2025.4789%209.35203%2025.4446L9.35223%2025.445ZM38.502%2025.445C38.5234%2025.4454%2038.5437%2025.4479%2038.5652%2025.4479C38.5866%2025.4479%2038.6069%2025.445%2038.6283%2025.445C42.9064%2025.479%2046.3266%2028.9435%2046.3266%2033.2935V35.3452H35.2377L35.2374%2032.6957C35.2374%2030.6632%2034.7001%2028.7618%2033.7702%2027.1137C35.0726%2026.0787%2036.7089%2025.4594%2038.5021%2025.445H38.502Z'%20fill='%23103E13'/%3e%3c/svg%3e" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">Membership
+            Organisations</h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of membership renewals and payments</p>
+        </div>
+        <div class="lg:col-span-1 col-span-3 max-w-[300px]  mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="/assets/national-DJrp-I5I.svg" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">National Associations
+          </h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of
+            membership renewals and payments</p>
+        </div>
+        <div class="lg:col-span-1 col-span-3 :max-w-[300px]  mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="/assets/group-DyVGFofA.svg" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">Clubs And Groups</h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of
+            membership renewals and payments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- community end -->
+  <!-- speeding start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 items-center">
+        <div class="sm:col-span-5 col-span-12">
+          <div class="flex justify-center items-center">
+            <img src="/assets/poxelgradesvg-DXAkXg7q.svg" alt="Computer" class="h-auto max-w-full">
+          </div>
+        </div>
+        <div class="sm:col-span-7 col-span-12 flex items-center flex-col justify-start">
+          <div class="mx-auto">
+            <h3 class="max-w-[600px] sm:text-4xl text-2xl font-semibold text-gray-dark mb-4 ">The unseen of spending
+              three years at
+              Pixelgrade</h3>
+            <p class="max-w-[600px] text-sm text-gray-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+              Sed sit amet
+              justo ipsum. Sed accumsan quam vitae est varius
+              fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+              pulvinar sit amet
+              risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar
+              odio.</p>
+            <button
+              class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline">Learn
+              more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- speeding end -->
+  <!-- local start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto grid grid-cols-12">
+      <div class="sm:col-span-6 col-span-12">
+        <h3 class="sm:text-4xl text-3xl font-semibold text-gray-dark">Helping a local</h3>
+        <h3 class="sm:text-4xl text-3xl font-semibold text-primary">business reinvent itself</h3>
+        <p class="text-dark font-normal mt-2">We reached here with our hard work and dedication</p>
+      </div>
+      <div class="sm:col-span-6 col-span-12 sm:pt-0 pt-8">
+        <div class="grid grid-cols-4 sm:gap-14 gap-8">
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="/assets/local-1-0et58Zp1.svg" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">2,245,341</h4>
+                <p class="text-gray-medium">Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon'%3e%3cg%20id='Group%202'%3e%3cpath%20id='Vector'%20d='M24.9036%2018.3939L24.9033%2023.4168V23.4168V23.4752C24.9033%2023.5918%2024.9184%2023.7048%2024.9466%2023.8125L24.8988%2024.6303L24.8962%2024.6742C24.885%2024.8659%2024.8103%2025.0335%2024.6842%2025.1598L26.1268%2024.2149C26.0445%2024.2014%2025.9624%2024.1722%2025.8806%2024.1277L25.4844%2023.9119V23.4752V23.4168V18.3939M24.9036%2018.3939V18.3938L25.194%2018.3939L25.4844%2018.3939M24.9036%2018.3939C24.9036%2018.5543%2025.0338%2018.6843%2025.194%2018.6843C25.3544%2018.6843%2025.4844%2018.554%2025.4844%2018.3939M24.9036%2018.3939H25.194H25.4844M19.2833%2017.9449L19.2833%2017.9449L19.2833%2017.9449ZM19.2833%2017.9449C19.0703%2018.316%2018.5586%2018.4545%2018.1849%2018.2399L19.2833%2017.9449ZM17.8522%2018.8176L17.8516%2018.8172C17.5772%2018.6588%2017.3794%2018.3994%2017.2976%2018.0954L17.2974%2018.0949L17.2974%2018.0948L17.297%2018.0933C17.2304%2017.8428%2017.2473%2017.5807%2017.3431%2017.3432V17.1486C17.1722%2017.4436%2017.1265%2017.7878%2017.2149%2018.117C17.3028%2018.4459%2017.5141%2018.7208%2017.8095%2018.8921L17.8522%2018.8176ZM25.0957%2025.571L25.1558%2025.631L25.0957%2025.571L25.095%2025.5717C24.8442%2025.822%2024.5077%2025.9601%2024.1545%2025.9601C24.1545%2025.9601%2024.1545%2025.9601%2024.1545%2025.9601C23.6743%2025.9601%2023.2532%2025.7049%2023.0194%2025.323C22.9954%2025.3353%2022.9711%2025.3471%2022.9465%2025.3586L25.0957%2025.571ZM17.9195%2017.4836C17.8377%2017.6253%2017.8166%2017.7867%2017.8587%2017.944C17.8587%2017.944%2017.8588%2017.9441%2017.8588%2017.9441L17.8588%2017.9443L17.859%2017.9449C17.9007%2018.1012%2017.9992%2018.2308%2018.142%2018.3142C18.142%2018.3143%2018.1421%2018.3143%2018.1421%2018.3143L17.9195%2017.4836Z'%20fill='%234CAF4F'%20stroke='%234CAF4F'%20stroke-width='1.33333'/%3e%3cpath%20id='Vector_2'%20d='M16.1252%2030.7918C15.9467%2030.8993%2015.7158%2030.8413%2015.6091%2030.663C15.5021%2030.4849%2015.5601%2030.2537%2015.7379%2030.1468L16.1252%2030.7918ZM11.7469%2026.4271C11.7615%2026.4007%2011.7752%2026.3761%2011.7879%2026.3532C11.8391%2026.2609%2011.8738%2026.1984%2011.8878%2026.1733L11.9636%2026.2132C11.9167%2026.2976%2011.8708%2026.3803%2011.8257%2026.4615C11.7993%2026.4516%2011.773%2026.4402%2011.7469%2026.4271ZM22.1554%2028.7211C22.3076%2028.6297%2022.415%2028.4851%2022.4579%2028.3133C22.5007%2028.1418%2022.4741%2027.9635%2022.3829%2027.8113L22.1554%2028.7211Z'%20fill='%234CAF4F'%20stroke='%234CAF4F'%20stroke-width='1.33333'/%3e%3cpath%20id='Vector_3'%20d='M27.8527%2028.0933C27.7587%2028.035%2027.6732%2027.966%2027.5976%2027.888L26.8782%2027.5117L26.8782%2027.5116L26.8381%2027.4907C26.7243%2027.4311%2026.6083%2027.4029%2026.4965%2027.4026L27.8527%2028.0933ZM26.1717%2026.862C26.1718%2026.862%2026.1719%2026.8619%2026.1721%2026.8619L26.2275%2027.0842L26.2275%2027.0842L26.3126%2027.4256L26.3125%2027.4256L26.1717%2026.862ZM30.3872%2033.7857C30.387%2033.7856%2030.3869%2033.7855%2030.3867%2033.7854L30.3872%2033.7857ZM25.845%2030.1872L25.8464%2030.188L25.845%2030.1872Z'%20fill='%234CAF4F'%20stroke='%234CAF4F'%20stroke-width='1.33333'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">46,328</h4>
+                <p class="text-gray-medium">Clubs</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon'%3e%3cg%20id='Vector'%3e%3cpath%20d='M40%2042V38C40%2035.8783%2039.1571%2033.8434%2037.6569%2032.3431C36.1566%2030.8429%2034.1217%2030%2032%2030H30C29.4696%2030%2028.9609%2029.7893%2028.5858%2029.4142C28.2107%2029.0391%2028%2028.5304%2028%2028V18C28%2016.9391%2027.5786%2015.9217%2026.8284%2015.1716C26.0783%2014.4214%2025.0609%2014%2024%2014C22.9391%2014%2021.9217%2014.4214%2021.1716%2015.1716C20.4214%2015.9217%2020%2016.9391%2020%2018V36L15.2%2029.6C14.8274%2029.1032%2014.3443%2028.7%2013.7889%2028.4223C13.2334%2028.1446%2012.621%2028%2012%2028H11.132C9.402%2028%208%2029.402%208%2031.132C8%2031.7%208.154%2032.258%208.446%2032.744L14%2042M24%208V6V8ZM36%2020H38H36ZM10%2020H12H10ZM14.686%2010.686L13.272%209.272L14.686%2010.686ZM33.314%2010.686L34.728%209.272L33.314%2010.686Z'%20fill='%234CAF4F'/%3e%3cpath%20d='M40%2042V38C40%2035.8783%2039.1571%2033.8434%2037.6569%2032.3431C36.1566%2030.8429%2034.1217%2030%2032%2030H30C29.4696%2030%2028.9609%2029.7893%2028.5858%2029.4142C28.2107%2029.0391%2028%2028.5304%2028%2028V18C28%2016.9391%2027.5786%2015.9217%2026.8284%2015.1716C26.0783%2014.4214%2025.0609%2014%2024%2014V14C22.9391%2014%2021.9217%2014.4214%2021.1716%2015.1716C20.4214%2015.9217%2020%2016.9391%2020%2018V36L15.2%2029.6C14.8274%2029.1032%2014.3443%2028.7%2013.7889%2028.4223C13.2334%2028.1446%2012.621%2028%2012%2028H11.132C9.402%2028%208%2029.402%208%2031.132C8%2031.7%208.154%2032.258%208.446%2032.744L14%2042M24%208V6M36%2020H38M10%2020H12M14.686%2010.686L13.272%209.272M33.314%2010.686L34.728%209.272'%20stroke='%234CAF4F'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">828,867</h4>
+                <p class="text-gray-medium">Event Bookings</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Icon'%3e%3cpath%20id='Vector'%20d='M5.5%2016.5V17H6H42H42.5V16.5V14.25C42.5%2013.1228%2042.0522%2012.0418%2041.2552%2011.2448C40.4582%2010.4478%2039.3772%2010%2038.25%2010H9.75C8.62283%2010%207.54183%2010.4478%206.7448%2011.2448C5.94777%2012.0418%205.5%2013.1228%205.5%2014.25V16.5ZM42.5%2019.5V19H42H6H5.5V19.5V33.75C5.5%2034.8772%205.94777%2035.9582%206.7448%2036.7552C7.54183%2037.5522%208.62283%2038%209.75%2038H38.25C39.3772%2038%2040.4582%2037.5522%2041.2552%2036.7552C42.0522%2035.9582%2042.5%2034.8772%2042.5%2033.75V19.5ZM3.5%2014.25C3.5%2012.5924%204.15848%2011.0027%205.33058%209.83058C6.50268%208.65848%208.0924%208%209.75%208H38.25C39.9076%208%2041.4973%208.65848%2042.6694%209.83058C43.8415%2011.0027%2044.5%2012.5924%2044.5%2014.25V33.75C44.5%2035.4076%2043.8415%2036.9973%2042.6694%2038.1694C41.4973%2039.3415%2039.9076%2040%2038.25%2040H9.75C8.0924%2040%206.50268%2039.3415%205.33058%2038.1694C4.15848%2036.9973%203.5%2035.4076%203.5%2033.75V14.25ZM31.5%2029H36C36.2652%2029%2036.5196%2029.1054%2036.7071%2029.2929C36.8946%2029.4804%2037%2029.7348%2037%2030C37%2030.2652%2036.8946%2030.5196%2036.7071%2030.7071C36.5196%2030.8946%2036.2652%2031%2036%2031H31.5C31.2348%2031%2030.9804%2030.8946%2030.7929%2030.7071C30.6054%2030.5196%2030.5%2030.2652%2030.5%2030C30.5%2029.7348%2030.6054%2029.4804%2030.7929%2029.2929C30.9804%2029.1054%2031.2348%2029%2031.5%2029Z'%20fill='%234CAF4F'%20stroke='%234CAF4F'/%3e%3c/g%3e%3c/svg%3e" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">1,926,436</h4>
+                <p class="text-gray-medium">Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- local end -->
+  <!-- design start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 items-center">
+        <div class="sm:col-span-5 col-span-12">
+          <div class="flex justify-center items-center">
+            <img src="/assets/design-DY4bulEE.svg" alt="Computer" class="h-auto max-w-full">
+          </div>
+        </div>
+        <div class="sm:col-span-7 col-span-12 flex items-center flex-col justify-start sm:pt-0 pt-8">
+          <div class="mx-auto">
+            <h3 class="max-w-[600px] sm:text-4xl text-2xl font-semibold text-gray-dark mb-4 ">How to design your site
+              footer like we
+              did</h3>
+            <p class="max-w-[600px] text-sm text-gray-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc
+              varius arcu,
+              at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea
+              dictumst. Vivamus
+              vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna
+              tincidunt.
+              Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac,
+              hendrerit
+              venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+            <button
+              class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline">Learn
+              more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- design end -->
+  <!-- testimonial start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 sm:gap-x-16 gap-x-0 items-center">
+        <div class="sm:col-span-4 col-span-12">
+          <img src="/assets/testimonial-0RTiIjSq.png" alt="testimonial" class="h-auto max-w-full mx-auto">
+        </div>
+        <div class="sm:col-span-8 col-span-12">
+          <div>
+            <p class="text-gray-dark font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+              eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
+              nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+              elit erat a magna. Donec quis erat at libero ultrices mollis. In
+              hac habitasse platea dictumst. Vivamus vehicula leo dui, at
+              porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget
+              nulla commodo faucibus efficitur quis massa. Praesent felis est,
+              finibus et nisi ac, hendrerit venenatis libero. Donec
+              consectetur faucibus ipsum id gravida.
+            </p>
+            <h5 class="text-xl font-bold text-primary mt-4">Tim Smith</h5>
+            <p class="text-gray-light font-normal mt-2">
+              British Dragon Boat Racing Association
+            </p>
+            <div class="flex items-center justify-between flex-col gap-8 lg:gap-10 lg:flex-row mt-10">
+              <div class="w-full lg:flex-1">
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-y-5">
+                  <img src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_818)'%3e%3cpath%20id='Vector'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.0001%200C15.5229%200%2020.0001%204.47715%2020.0001%2010V0H30.0001C35.5229%200%2040.0001%204.47715%2040.0001%2010C40.0001%2015.5228%2035.5229%2020%2030.0001%2020C35.5229%2020%2040.0001%2024.4772%2040.0001%2030C40.0001%2032.7423%2038.8962%2035.2268%2037.1086%2037.0334L37.0712%2037.0711L37.038%2037.1041C35.231%2038.8943%2032.7447%2040%2030.0001%2040C27.2742%2040%2024.803%2038.9093%2022.9991%2037.1405C22.9757%2037.1175%2022.9523%2037.0943%2022.929%2037.0711C22.9071%2037.0492%2022.8853%2037.0272%2022.8636%2037.0051C21.0925%2035.2009%2020.0001%2032.728%2020.0001%2030C20.0001%2035.5228%2015.5229%2040%2010.0001%2040C4.47721%2040%206.10352e-05%2035.5228%206.10352e-05%2030V20H10.0001C4.47721%2020%206.10352e-05%2015.5228%206.10352e-05%2010C6.10352e-05%204.47715%204.47721%200%2010.0001%200ZM18.0001%2010C18.0001%2014.4183%2014.4184%2018%2010.0001%2018V2C14.4184%202%2018.0001%205.58172%2018.0001%2010ZM38.0001%2030C38.0001%2025.5817%2034.4184%2022%2030.0001%2022C25.5818%2022%2022.0001%2025.5817%2022.0001%2030H38.0001ZM2.00006%2022V30C2.00006%2034.4183%205.58178%2038%2010.0001%2038C14.4184%2038%2018.0001%2034.4183%2018.0001%2030V22H2.00006ZM22.0001%2018V2H30.0001C34.4184%202%2038.0001%205.58172%2038.0001%2010C38.0001%2014.4183%2034.4184%2018%2030.0001%2018H22.0001Z'%20fill='%23263238'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_818'%3e%3crect%20width='40'%20height='40'%20fill='white'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="quote" class="mx-auto">
+                  <img src="data:image/svg+xml,%3csvg%20width='40'%20height='29'%20viewBox='0%200%2040%2029'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_821)'%3e%3cpath%20id='Vector'%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.98578%204.96142L0%2014.8468C1.99734%2016.8241%204.27899%2018.4905%206.76664%2019.7942C7.45424%2021.5998%208.53203%2023.2931%2010%2024.7463C15.5229%2030.2136%2024.4772%2030.2136%2030%2024.7463C31.468%2023.2931%2032.5458%2021.5998%2033.2334%2019.7941C35.721%2018.4905%2038.0027%2016.8241%2040%2014.8468L30.0223%204.96946C30.0149%204.96207%2030.0075%204.95468%2030%204.9473C24.4772%20-0.520031%2015.5229%20-0.520031%2010%204.9473C9.99527%204.95201%209.99052%204.95671%209.98578%204.96142ZM29.0445%2021.5777C26.1345%2022.5499%2023.0797%2023.0478%2020%2023.0478C16.9203%2023.0478%2013.8656%2022.5499%2010.9556%2021.5777C11.2709%2021.9918%2011.619%2022.3892%2012%2022.7664C16.4183%2027.1403%2023.5817%2027.1403%2028%2022.7664C28.381%2022.3892%2028.7292%2021.9918%2029.0445%2021.5777ZM12.2051%206.7292C12.9554%207.21991%2013.7532%207.63982%2014.588%207.98216C16.3038%208.68572%2018.1428%209.04784%2020%209.04784C21.8572%209.04784%2023.6962%208.68572%2025.412%207.98216C26.2468%207.63982%2027.0446%207.2199%2027.795%206.72918C23.4318%202.61933%2016.5682%202.61934%2012.2051%206.7292Z'%20fill='%233B4158'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_821'%3e%3crect%20width='40'%20height='28'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="quote" class="mx-auto">
+                  <img src="/assets/client-3-D_A2NqIO.svg" alt="quote" class="mx-auto">
+                  <img src="/assets/client-4-D9-ra7IU.svg" alt="quote" class="mx-auto">
+                  <img src="data:image/svg+xml,%3csvg%20width='41'%20height='28'%20viewBox='0%200%2041%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_844)'%3e%3cpath%20id='Vector'%20d='M38.4375%201.69055C38.4375%202.15654%2038.8199%202.5343%2039.2917%202.5343H40.1458C40.6176%202.5343%2041%202.15654%2041%201.69055C41%201.22456%2040.6176%200.846802%2040.1458%200.846802H39.2917C38.8199%200.846802%2038.4375%201.22456%2038.4375%201.69055Z'%20fill='%23212326'/%3e%3cpath%20id='Vector_2'%20d='M13.6667%2027.8468H17.8161L16.6081%2026.6535C16.2877%2026.3371%2015.8532%2026.1593%2015.4001%2026.1593H13.6667C7.06225%2026.1593%201.70833%2020.8707%201.70833%2014.3468C1.70833%207.82293%207.06225%202.53431%2013.6667%202.5343H27.3333C33.9378%202.5343%2039.2917%207.82293%2039.2917%2014.3468C39.2917%2020.8707%2033.9378%2026.1593%2027.3333%2026.1593H22.2209C21.5413%2026.1593%2020.8895%2025.8926%2020.4089%2025.4179L18.9937%2024.02C18.1928%2023.2288%2017.1064%2022.7843%2015.9737%2022.7843H13.6667C8.94921%2022.7843%205.125%2019.0067%205.125%2014.3468C5.125%209.68687%208.94921%205.9093%2013.6667%205.9093H27.3333C32.0508%205.9093%2035.875%209.68687%2035.875%2014.3468C35.875%2019.0067%2032.0508%2022.7843%2027.3333%2022.7843H24.0507C23.371%2022.7843%2022.7193%2022.5176%2022.2387%2022.0429L20.8234%2020.645C20.0225%2019.8538%2018.9362%2019.4093%2017.8035%2019.4093H13.6667C10.8362%2019.4093%208.54167%2017.1427%208.54167%2014.3468C8.54167%2011.5509%2010.8362%209.2843%2013.6667%209.2843H27.3333C30.1638%209.2843%2032.4583%2011.5509%2032.4583%2014.3468C32.4583%2017.1086%2030.2194%2019.354%2027.4367%2019.4083L27.4361%2019.4093H26.1861C25.5064%2019.4093%2024.8547%2019.1426%2024.3741%2018.6679L22.9588%2017.27C22.3017%2016.6207%2021.4524%2016.205%2020.5429%2016.0767L20.5%2016.0343H13.6667C12.7232%2016.0343%2011.9583%2015.2788%2011.9583%2014.3468C11.9583%2013.4148%2012.7232%2012.6593%2013.6667%2012.6593H27.3333C28.2768%2012.6593%2029.0417%2013.4148%2029.0417%2014.3468C29.0417%2015.2788%2028.2768%2016.0343%2027.3333%2016.0343H23.9167L25.1247%2017.2276C25.445%2017.544%2025.8795%2017.7218%2026.3326%2017.7218H27.3333C29.2203%2017.7218%2030.75%2016.2107%2030.75%2014.3468C30.75%2012.4829%2029.2203%2010.9718%2027.3333%2010.9718H13.6667C11.7797%2010.9718%2010.25%2012.4829%2010.25%2014.3468C10.25%2016.2107%2011.7797%2017.7218%2013.6667%2017.7218H19.9389C20.6186%2017.7218%2021.2703%2017.9885%2021.7509%2018.4632L23.1662%2019.8611C23.9671%2020.6523%2025.0534%2021.0968%2026.1861%2021.0968H27.7604V21.0838C31.3354%2020.8661%2034.1667%2017.933%2034.1667%2014.3468C34.1667%2010.6189%2031.1072%207.5968%2027.3333%207.5968H13.6667C9.89275%207.5968%206.83333%2010.6189%206.83333%2014.3468C6.83333%2018.0748%209.89275%2021.0968%2013.6667%2021.0968H17.8035C18.4831%2021.0968%2019.1349%2021.3635%2019.6155%2021.8382L21.0307%2023.2361C21.8317%2024.0273%2022.918%2024.4718%2024.0507%2024.4718H27.3333C32.9943%2024.4718%2037.5833%2019.9387%2037.5833%2014.3468C37.5833%208.7549%2032.9943%204.2218%2027.3333%204.2218H13.6667C8.00573%204.2218%203.41667%208.7549%203.41667%2014.3468C3.41667%2019.9387%208.00573%2024.4718%2013.6667%2024.4718H15.9737C16.6534%2024.4718%2017.3051%2024.7385%2017.7857%2025.2132L19.201%2026.6111C20.0019%2027.4023%2021.0882%2027.8468%2022.2209%2027.8468H27.3333C34.8812%2027.8468%2041%2021.8027%2041%2014.3468C41%206.89095%2034.8812%200.846801%2027.3333%200.846802L13.6667%200.846805C6.11877%200.846805%20-6.59857e-07%206.89096%200%2014.3468C6.59857e-07%2021.8027%206.11878%2027.8468%2013.6667%2027.8468Z'%20fill='%23212326'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_844'%3e%3crect%20width='41'%20height='27'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="quote" class="mx-auto">
+                  <img src="data:image/svg+xml,%3csvg%20width='41'%20height='28'%20viewBox='0%200%2041%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20id='Logo'%20clip-path='url(%23clip0_211_844)'%3e%3cpath%20id='Vector'%20d='M38.4375%201.69055C38.4375%202.15654%2038.8199%202.5343%2039.2917%202.5343H40.1458C40.6176%202.5343%2041%202.15654%2041%201.69055C41%201.22456%2040.6176%200.846802%2040.1458%200.846802H39.2917C38.8199%200.846802%2038.4375%201.22456%2038.4375%201.69055Z'%20fill='%23212326'/%3e%3cpath%20id='Vector_2'%20d='M13.6667%2027.8468H17.8161L16.6081%2026.6535C16.2877%2026.3371%2015.8532%2026.1593%2015.4001%2026.1593H13.6667C7.06225%2026.1593%201.70833%2020.8707%201.70833%2014.3468C1.70833%207.82293%207.06225%202.53431%2013.6667%202.5343H27.3333C33.9378%202.5343%2039.2917%207.82293%2039.2917%2014.3468C39.2917%2020.8707%2033.9378%2026.1593%2027.3333%2026.1593H22.2209C21.5413%2026.1593%2020.8895%2025.8926%2020.4089%2025.4179L18.9937%2024.02C18.1928%2023.2288%2017.1064%2022.7843%2015.9737%2022.7843H13.6667C8.94921%2022.7843%205.125%2019.0067%205.125%2014.3468C5.125%209.68687%208.94921%205.9093%2013.6667%205.9093H27.3333C32.0508%205.9093%2035.875%209.68687%2035.875%2014.3468C35.875%2019.0067%2032.0508%2022.7843%2027.3333%2022.7843H24.0507C23.371%2022.7843%2022.7193%2022.5176%2022.2387%2022.0429L20.8234%2020.645C20.0225%2019.8538%2018.9362%2019.4093%2017.8035%2019.4093H13.6667C10.8362%2019.4093%208.54167%2017.1427%208.54167%2014.3468C8.54167%2011.5509%2010.8362%209.2843%2013.6667%209.2843H27.3333C30.1638%209.2843%2032.4583%2011.5509%2032.4583%2014.3468C32.4583%2017.1086%2030.2194%2019.354%2027.4367%2019.4083L27.4361%2019.4093H26.1861C25.5064%2019.4093%2024.8547%2019.1426%2024.3741%2018.6679L22.9588%2017.27C22.3017%2016.6207%2021.4524%2016.205%2020.5429%2016.0767L20.5%2016.0343H13.6667C12.7232%2016.0343%2011.9583%2015.2788%2011.9583%2014.3468C11.9583%2013.4148%2012.7232%2012.6593%2013.6667%2012.6593H27.3333C28.2768%2012.6593%2029.0417%2013.4148%2029.0417%2014.3468C29.0417%2015.2788%2028.2768%2016.0343%2027.3333%2016.0343H23.9167L25.1247%2017.2276C25.445%2017.544%2025.8795%2017.7218%2026.3326%2017.7218H27.3333C29.2203%2017.7218%2030.75%2016.2107%2030.75%2014.3468C30.75%2012.4829%2029.2203%2010.9718%2027.3333%2010.9718H13.6667C11.7797%2010.9718%2010.25%2012.4829%2010.25%2014.3468C10.25%2016.2107%2011.7797%2017.7218%2013.6667%2017.7218H19.9389C20.6186%2017.7218%2021.2703%2017.9885%2021.7509%2018.4632L23.1662%2019.8611C23.9671%2020.6523%2025.0534%2021.0968%2026.1861%2021.0968H27.7604V21.0838C31.3354%2020.8661%2034.1667%2017.933%2034.1667%2014.3468C34.1667%2010.6189%2031.1072%207.5968%2027.3333%207.5968H13.6667C9.89275%207.5968%206.83333%2010.6189%206.83333%2014.3468C6.83333%2018.0748%209.89275%2021.0968%2013.6667%2021.0968H17.8035C18.4831%2021.0968%2019.1349%2021.3635%2019.6155%2021.8382L21.0307%2023.2361C21.8317%2024.0273%2022.918%2024.4718%2024.0507%2024.4718H27.3333C32.9943%2024.4718%2037.5833%2019.9387%2037.5833%2014.3468C37.5833%208.7549%2032.9943%204.2218%2027.3333%204.2218H13.6667C8.00573%204.2218%203.41667%208.7549%203.41667%2014.3468C3.41667%2019.9387%208.00573%2024.4718%2013.6667%2024.4718H15.9737C16.6534%2024.4718%2017.3051%2024.7385%2017.7857%2025.2132L19.201%2026.6111C20.0019%2027.4023%2021.0882%2027.8468%2022.2209%2027.8468H27.3333C34.8812%2027.8468%2041%2021.8027%2041%2014.3468C41%206.89095%2034.8812%200.846801%2027.3333%200.846802L13.6667%200.846805C6.11877%200.846805%20-6.59857e-07%206.89096%200%2014.3468C6.59857e-07%2021.8027%206.11878%2027.8468%2013.6667%2027.8468Z'%20fill='%23212326'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_211_844'%3e%3crect%20width='41'%20height='27'%20fill='white'%20transform='translate(0%200.846802)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="quote" class="mx-auto">
+                </div>
+              </div>
+              <div class="w-full lg:w-[230px]">
+                <a href="#"
+                  class="text-primary text-xl font-bold flex justify-center lg:justify-start hover:text-gray-medium group">Meet
+                  all customers
+                  <svg class="h-8 w-8 group-hover:text-gray-medium text-primary ml-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial end -->
+
+  <!-- marketing start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <h3 class="max-w-[550px] mx-auto md:text-4xl text-3xl font-semibold text-gray-dark mb-3 leading-normal">
+          Caring is the new marketing
+        </h3>
+        <p class="max-w-[660px] mx-auto text-gray-dark font-normal">
+          The Nexcent blog is the best place to read about the latest
+          membership insights, trends and more. See who's joining the
+          community, read about how our community are increasing their
+          membership income and lot's more.&ZeroWidthSpace;
+        </p>
+      </div>
+      <div class="grid grid-cols-12 sm:gap-x-5 mt-20 sm:mb-32 mb-1 sm:gap-y-0 gap-y-16">
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="/assets/marketing-1-D9ZOohMU.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              Creating Streamlined Safeguarding Processes with OneRen
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="/assets/marketing-2-D7ezDKqh.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              What are your safeguarding and how can you
+              manage them?
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="/assets/marketing-3-TY3sYR1V.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              Creating Streamlined Safeguarding Processes with OneRen
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- marketing end -->
+  <!-- demo start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <h5 class="max-w-[800px] mx-auto sm:text-6xl text-4xl font-bold text-gray-dark leading-snug">
+          Pellentesque suscipit fringilla libero eu.
+        </h5>
+        <button
+          class="bg-green-500 max-w-[150px] mx-auto hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline flex items-center gap-1">Get
+          a Demo <svg class="h-5 w-5 text-white group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="15" y1="16" x2="19" y2="12" />
+            <line x1="15" y1="8" x2="19" y2="12" />
+          </svg></button>
+      </div>
+    </div>
+  </section>
+  <!-- demo end -->
+  <!-- footer start -->
+  <footer class="bg-black py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 sm:gap-0 gap-y-10">
+        <div class="sm:col-span-5 col-span-12">
+          <img src="/assets/footer-logo-DOU9bZse.svg" alt="">
+          <p class="text-white text-sm mt-10">
+            Copyright © 2020 Nexcent ltd.
+          </p>
+          <p class="text-white text-sm mt-2">All rights reserved</p>
+          <div class="flex items-center gap-4 mt-10">
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                </path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg></a>
+          </div>
+        </div>
+        <div class="sm:col-span-2 col-span-12">
+          <div class="flex flex-col gap-3">
+            <h5 class="text-xl text-white font-semibold mb-3">Company</h5>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">About us</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Contact us</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sm:col-span-2 col-span-12">
+          <div class="flex flex-col gap-3">
+            <h5 class="text-xl text-white font-semibold mb-3">Support</h5>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Help center</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Terms of service</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Legal</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sm:col-span-3 col-span-12">
+          <h5 class="text-xl text-white font-semibold mb-5">
+            Stay up to date
+          </h5>
+          <div class="relative">
+            <input type="text" placeholder="Enter your email"
+              class="w-full sm:max-w-[400px] p-3 bg-white/20 rounded-lg outline-none focus-within:text-white">
+            <button
+              class="absolute top-1/2 sm:right-2 right-3 -translate-y-1/2 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              <svg class="h-5 w-5 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+                <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- js -->
+  <script src="main.js"></script>
+</body>
+
+</html>
