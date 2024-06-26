@@ -1,0 +1,555 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexcent</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- tailwind css -->
+  <link href="./css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="font-inter">
+  <!-- navbar start -->
+  <header class="bg-bg-light ">
+    <nav class="container mx-auto p-5  flex justify-between items-center">
+      <a href="#" id="brand">
+        <img src="./images/Logo.svg" class="object-cover" alt="logo">
+      </a>
+      <div id="nav-menu" class="hidden lg:flex gap-10">
+        <a href="#" class="font-normal text-dark hover:text-primary">Home</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Service</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Feature</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Product</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">Testimonial</a>
+        <a href="#" class="font-normal text-dark hover:text-primary">FAQ</a>
+      </div>
+      <div class="hidden lg:flex gap-4">
+        <button class="flex p-2 px-4 text-primary hover:bg-green-600 hover:text-white rounded-md">Login</button>
+        <button class="flex p-2 px-4 bg-primary hover:bg-green-600 text-white rounded-md">Sign up</button>
+      </div>
+      <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <svg class="h-7 w-7 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <div id="nav-dialog" class="fixed bg-white inset-0 sm:px-10 px-3 py-3 lg:hidden z-10">
+        <div id="nav-bar" class="flex justify-between items-center">
+          <a href="#" id="brand">
+            <img src="./images/Logo.svg" class="object-cover" alt="logo">
+          </a>
+          <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <svg class="h-7 w-7 text-gray-700" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col mt-6">
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Home</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Service</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Feature</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Product</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">Testimonial</a>
+          <a href="#" class="font-medium m-2 p-2 hover:bg-gray-50 blo rounded-lg">FAQ</a>
+          <div class="flex gap-5 mt-5 mx-auto">
+            <button class="flex p-2 px-4 text-primary hover:bg-green-600 hover:text-white rounded-md">Login</button>
+            <button class="flex p-2 px-4 bg-primary hover:bg-green-600 text-white rounded-md">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- navbar end -->
+  <!-- hero start -->
+  <section class="bg-bg-light">
+    <div class="container mx-auto py-28 px-4 grid grid-cols-12 items-center ">
+      <div
+        class="sm:col-span-7 col-span-12 flex  flex-col justify-center text-left sm:order-1 order-2 sm:justify-start sm:pt-0 pt-10">
+        <h1 class="lg:text-7xl md:text-4xl text-3xl font-semibold text-gray-800 sm:mb-4 mb-2">Lessons and insights</h1>
+        <h2 class="lg:text-7xl md:text-4xl text-3xl font-semibold text-green-500 sm:mb-8 mb-5">from 8 years</h2>
+        <p class="text-gray-600 text-lg mb-8">Where to grow your business as a photographer: site or social media?</p>
+        <button
+          class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
+      </div>
+      <div class="sm:col-span-5 col-span-12 flex justify-center items-center sm:order-2 order-1 sm:justify-end">
+        <img src="./images/hero.png" alt="Computer" class="h-auto sm:max-w-[400px] w-full">
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- hero end -->
+  <!-- client start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class=" text-center">
+        <h3 class="text-4xl font-semibold text-center text-gray-dark mb-4">Our Clients</h3>
+        <p class="text-gray-dark font-normal">We have been working with some Fortune 500+ clients</p>
+      </div>
+      <div class="grid sm:grid-cols-7 grid-cols-6 mt-14 sm:gap-0 gap-y-8">
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-1.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-2.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-3.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-4.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-5.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-2 mx-auto">
+          <img src="./images/client-6.svg" alt="client">
+        </div>
+        <div class="sm:col-span-1 col-span-6 mx-auto">
+          <img src="./images/client-7.svg" alt="client">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- client end -->
+  <!-- community start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center ">
+        <h3 class="max-w-[550px] mx-auto md:text-4xl text-3xl font-semibold text-gray-dark mb-3 leading-normal">Manage
+          your entire
+          community in a single
+          system</h3>
+        <p class="text-gray-dark font-normal">Who is Nextcent suitable for?</p>
+      </div>
+      <div class=" grid grid-cols-3 items-center lg:gap-0 gap-y-8 mt-10">
+        <div class="lg:col-span-1 col-span-3 max-w-[300px] mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="./images/membership.svg" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">Membership
+            Organisations</h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of membership renewals and payments</p>
+        </div>
+        <div class="lg:col-span-1 col-span-3 max-w-[300px]  mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="./images/national.svg" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">National Associations
+          </h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of
+            membership renewals and payments</p>
+        </div>
+        <div class="lg:col-span-1 col-span-3 :max-w-[300px]  mx-auto shadow-md shadow-gray-300/40 rounded-xl p-8">
+          <div class="flex justify-center items-center mb-4">
+            <img src="./images/group.svg" class="object-cover" alt="membership">
+          </div>
+          <h3 class="max-w-[260px] text-center font-bold text-gray-dark sm:text-3xl text-2xl mb-3">Clubs And Groups</h3>
+          <p class="max-w-[260px] text-sm text-center  text-gray-medium">Our membership management software provides
+            full automation of
+            membership renewals and payments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- community end -->
+  <!-- speeding start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 items-center">
+        <div class="sm:col-span-5 col-span-12">
+          <div class="flex justify-center items-center">
+            <img src="./images/poxelgradesvg.svg" alt="Computer" class="h-auto max-w-full">
+          </div>
+        </div>
+        <div class="sm:col-span-7 col-span-12 flex items-center flex-col justify-start">
+          <div class="mx-auto">
+            <h3 class="max-w-[600px] sm:text-4xl text-2xl font-semibold text-gray-dark mb-4 ">The unseen of spending
+              three years at
+              Pixelgrade</h3>
+            <p class="max-w-[600px] text-sm text-gray-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+              Sed sit amet
+              justo ipsum. Sed accumsan quam vitae est varius
+              fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+              pulvinar sit amet
+              risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar
+              odio.</p>
+            <button
+              class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline">Learn
+              more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- speeding end -->
+  <!-- local start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto grid grid-cols-12">
+      <div class="sm:col-span-6 col-span-12">
+        <h3 class="sm:text-4xl text-3xl font-semibold text-gray-dark">Helping a local</h3>
+        <h3 class="sm:text-4xl text-3xl font-semibold text-primary">business reinvent itself</h3>
+        <p class="text-dark font-normal mt-2">We reached here with our hard work and dedication</p>
+      </div>
+      <div class="sm:col-span-6 col-span-12 sm:pt-0 pt-8">
+        <div class="grid grid-cols-4 sm:gap-14 gap-8">
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="./images/local-1.svg" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">2,245,341</h4>
+                <p class="text-gray-medium">Members</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="./images/local-2.svg" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">46,328</h4>
+                <p class="text-gray-medium">Clubs</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="./images/local-3.svg" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">828,867</h4>
+                <p class="text-gray-medium">Event Bookings</p>
+              </div>
+            </div>
+          </div>
+          <div class="sm:col-span-2 col-span-4 mx-auto ">
+            <div class="flex items-center">
+              <div class="pr-4">
+                <img src="./images/local-4.svg" class="object-cover" alt="membership">
+              </div>
+              <div>
+                <h4 class="text-3xl font-bold">1,926,436</h4>
+                <p class="text-gray-medium">Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- local end -->
+  <!-- design start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 items-center">
+        <div class="sm:col-span-5 col-span-12">
+          <div class="flex justify-center items-center">
+            <img src="./images/design.svg" alt="Computer" class="h-auto max-w-full">
+          </div>
+        </div>
+        <div class="sm:col-span-7 col-span-12 flex items-center flex-col justify-start sm:pt-0 pt-8">
+          <div class="mx-auto">
+            <h3 class="max-w-[600px] sm:text-4xl text-2xl font-semibold text-gray-dark mb-4 ">How to design your site
+              footer like we
+              did</h3>
+            <p class="max-w-[600px] text-sm text-gray-dark font-normal">Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc
+              varius arcu,
+              at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea
+              dictumst. Vivamus
+              vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna
+              tincidunt.
+              Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac,
+              hendrerit
+              venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+            <button
+              class="bg-green-500 max-w-[150px] hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline">Learn
+              more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- design end -->
+  <!-- testimonial start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 sm:gap-x-16 gap-x-0 items-center">
+        <div class="sm:col-span-4 col-span-12">
+          <img src="./images/testimonial.png" alt="testimonial" class="h-auto max-w-full mx-auto">
+        </div>
+        <div class="sm:col-span-8 col-span-12">
+          <div>
+            <p class="text-gray-dark font-normal">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+              eros justo. Fusce egestas tristique ultrices. Nam tempor, augue
+              nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+              elit erat a magna. Donec quis erat at libero ultrices mollis. In
+              hac habitasse platea dictumst. Vivamus vehicula leo dui, at
+              porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget
+              nulla commodo faucibus efficitur quis massa. Praesent felis est,
+              finibus et nisi ac, hendrerit venenatis libero. Donec
+              consectetur faucibus ipsum id gravida.
+            </p>
+            <h5 class="text-xl font-bold text-primary mt-4">Tim Smith</h5>
+            <p class="text-gray-light font-normal mt-2">
+              British Dragon Boat Racing Association
+            </p>
+            <div class="flex items-center justify-between flex-col gap-8 lg:gap-10 lg:flex-row mt-10">
+              <div class="w-full lg:flex-1">
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-y-5">
+                  <img src="./images/client-1.svg" alt="quote" class="mx-auto">
+                  <img src="./images/client-2.svg" alt="quote" class="mx-auto">
+                  <img src="./images/client-3.svg" alt="quote" class="mx-auto">
+                  <img src="./images/client-4.svg" alt="quote" class="mx-auto">
+                  <img src="./images/client-5.svg" alt="quote" class="mx-auto">
+                  <img src="./images/client-5.svg" alt="quote" class="mx-auto">
+                </div>
+              </div>
+              <div class="w-full lg:w-[230px]">
+                <a href="#"
+                  class="text-primary text-xl font-bold flex justify-center lg:justify-start hover:text-gray-medium group">Meet
+                  all customers
+                  <svg class="h-8 w-8 group-hover:text-gray-medium text-primary ml-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial end -->
+
+  <!-- marketing start -->
+  <section class="bg-white py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <h3 class="max-w-[550px] mx-auto md:text-4xl text-3xl font-semibold text-gray-dark mb-3 leading-normal">
+          Caring is the new marketing
+        </h3>
+        <p class="max-w-[660px] mx-auto text-gray-dark font-normal">
+          The Nexcent blog is the best place to read about the latest
+          membership insights, trends and more. See who's joining the
+          community, read about how our community are increasing their
+          membership income and lot's more.&ZeroWidthSpace;
+        </p>
+      </div>
+      <div class="grid grid-cols-12 sm:gap-x-5 mt-20 sm:mb-32 mb-1 sm:gap-y-0 gap-y-16">
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="./images/marketing-1.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              Creating Streamlined Safeguarding Processes with OneRen
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="./images/marketing-2.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              What are your safeguarding and how can you
+              manage them?
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="sm:col-span-4 col-span-12 mx-auto">
+          <img src="./images/marketing-3.png" alt="marketing">
+
+          <div
+            class="max-w-[300px] mx-auto bg-bg-light rounded-lg shadow-lg shadow-gray-300/40 flex justify-center items-center flex-col p-4 -mt-10 relative">
+            <p class="text-center text-xl text-gray-medium font-semibold mb-4">
+              Creating Streamlined Safeguarding Processes with OneRen
+            </p>
+            <a href="#"
+              class="text-xl text-primary font-semibold flex items-center gap-2 group hover:text-gray-500">Readmore
+              <svg class="h-7 w-7 text-primary group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <line x1="15" y1="16" x2="19" y2="12"></line>
+                <line x1="15" y1="8" x2="19" y2="12"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- marketing end -->
+  <!-- demo start -->
+  <section class="bg-bg-light py-16 px-4">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <h5 class="max-w-[800px] mx-auto sm:text-6xl text-4xl font-bold text-gray-dark leading-snug">
+          Pellentesque suscipit fringilla libero eu.
+        </h5>
+        <button
+          class="bg-green-500 max-w-[150px] mx-auto hover:bg-green-700 text-white font-bold py-3 px-4 mt-8 rounded focus:outline-none focus:shadow-outline flex items-center gap-1">Get
+          a Demo <svg class="h-5 w-5 text-white group-hover:text-gray-500" width="24" height="24" viewBox="0 0 24 24"
+            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="15" y1="16" x2="19" y2="12" />
+            <line x1="15" y1="8" x2="19" y2="12" />
+          </svg></button>
+      </div>
+    </div>
+  </section>
+  <!-- demo end -->
+  <!-- footer start -->
+  <footer class="bg-black py-16 px-4">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-12 sm:gap-0 gap-y-10">
+        <div class="sm:col-span-5 col-span-12">
+          <img src="./images/footer-logo.svg" alt="">
+          <p class="text-white text-sm mt-10">
+            Copyright © 2020 Nexcent ltd.
+          </p>
+          <p class="text-white text-sm mt-2">All rights reserved</p>
+          <div class="flex items-center gap-4 mt-10">
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg></a>
+            <a href="#" class="flex justify-center items-center bg-white/10 p-[10px] hover:bg-white/20 rounded-full">
+              <svg class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                </path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg></a>
+          </div>
+        </div>
+        <div class="sm:col-span-2 col-span-12">
+          <div class="flex flex-col gap-3">
+            <h5 class="text-xl text-white font-semibold mb-3">Company</h5>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">About us</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Contact us</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sm:col-span-2 col-span-12">
+          <div class="flex flex-col gap-3">
+            <h5 class="text-xl text-white font-semibold mb-3">Support</h5>
+            <ul class="flex flex-col gap-3">
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Help center</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Terms of service</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Legal</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Privacy policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm text-white font-normal hover:text-primary">Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sm:col-span-3 col-span-12">
+          <h5 class="text-xl text-white font-semibold mb-5">
+            Stay up to date
+          </h5>
+          <div class="relative">
+            <input type="text" placeholder="Enter your email"
+              class="w-full sm:max-w-[400px] p-3 bg-white/20 rounded-lg outline-none focus-within:text-white">
+            <button
+              class="absolute top-1/2 sm:right-2 right-3 -translate-y-1/2 py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              <svg class="h-5 w-5 text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z"></path>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+                <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- js -->
+  <script src="main.js"></script>
+</body>
+
+</html>
